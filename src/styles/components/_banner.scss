@@ -1,0 +1,56 @@
+.banner {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    .banner__post {
+        width: 450px;
+    }
+    .banner__subtitle {
+    font-size: 1.2vw;
+      color: white;
+      line-height: 1.25;
+      padding: 1rem 13rem 0 0;
+    }
+.banner__btn {
+    margin-top: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+.banner__btn--play {
+  padding: 0.6rem 2rem;
+  margin-right: 0.75rem;
+  font-weight: 600;
+  border-radius: 0.125rem;
+  font-family: inherit;
+  font-size: 100%;
+  border: solid transparent;
+}
+
+.banner__btn--play:hover {
+    background-color: rgba(255, 255, 255, 0.777);
+}
+
+}
+
+.banner__btn--info {
+    color: white;
+  padding: 0.6rem 2rem;
+  margin-right: 0.75rem;
+  font-weight: 600;
+  border-radius: 0.125rem;
+  background-color: rgba(109, 109, 110, 0.7);
+  font-family: inherit;
+  font-size: 100%;
+  border: solid transparent;
+}
+
+.banner__btn--info:hover {
+    background-color: rgba(109, 109, 110, 0.525);
+}
+
+.banner__btn i {
+  margin-right: 0.5rem;
+}
+
+}

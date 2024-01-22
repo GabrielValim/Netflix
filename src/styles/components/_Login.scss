@@ -1,0 +1,153 @@
+.login__background{
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9) 5%,
+        rgba(0, 0, 0, 0.2) 20%,
+        rgba(0, 0, 0, 0.2) 80%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url(../../../src/assets/imgs/login.jpg);
+    background-size: cover;
+
+    nav {
+        position: fixed;
+        z-index: 1;
+        padding: 25px 60px;
+        a {
+
+            img {
+                width: 160px;
+            }
+
+        }
+    }
+
+    .form-wrapper {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 430px;
+        padding: 60px;
+        border-radius: 4px;
+        background: rgba(0,0,0,0.75);
+        transform: translate(-50%, -50%);
+
+        h2 {
+            color: #fff;
+            font-size: 2rem;
+        }
+
+        form {
+            margin: 25px 0 65px ;
+
+            .form-control {
+                position: relative;
+                height: 50px;
+                margin-bottom: 16px;
+
+                input {
+                    height: 100%;
+                    width: 100%;
+                    background-color: #333;
+                    outline: none;
+                    border: none;
+                    color: #fff;
+                    font-size: 1rem;
+                    border-radius: 4px;
+                    padding: 0 20px;
+                }
+
+                input:is(:focus, :valid) {
+                    padding: 16px 20px 0;
+                    background: #444;
+                }
+
+                label {
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    color: #8c8c8c;
+                    pointer-events: none;
+                    font-size: 1rem;
+                    transform: translateY(-50%);
+                    transition: all 0.1s ease;
+                }
+
+                input:is(:focus, :valid) ~ label {
+                    font-size: 0.75rem;
+                    transform: translateY(-130%);
+                }
+             
+            }
+
+
+            
+            button {
+                width: 100%;
+                padding: 16px 0;
+                font-size: 1rem;
+                border: none;
+                outline: none;
+                background-color: #db0000;
+                color: #fff;
+                font-weight: 500;
+                margin: 25px 0 10px;
+                cursor: pointer;
+                transition: 0.1s ease;
+
+                &:hover {
+                    background-color: #c40812;
+                }
+            }
+
+            .form-help {
+                display: flex;
+                justify-content: space-between;
+
+                
+            }
+            .form-help :where(label, a) {
+                font-size: .9rem;
+            } 
+
+            .remember-me {
+                display: flex;
+                input {
+                    margin-right:5px;
+                    accent-color: #333;
+                }
+            } 
+            
+        }
+
+        p {
+            a {
+                color: #fff;
+            }
+        }
+
+        small {
+            display: block;
+            margin-top: 15px;
+            
+            a {
+                color: #0071eb;
+            }
+        }
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        
+    }
+
+    .form-wrapper :where(label, p, small, a) {
+        color: #b3b3b3;
+    }
+
+}

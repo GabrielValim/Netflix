@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./slider.js" defer></script>
+    <script src="https://kit.fontawesome.com/0f47e8fbfa.js" crossorigin="anonymous"></script>
+    <script src="./swiper.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Clone Netflix</title>
+</head>
+<body>
+    <div class="app__background">
+        <div class="app__hero">
+            <header class="header">
+                <nav class="header__nav">
+                    <div class="header__left">
+                        <img class="logo" src="./src/assets/imgs/logo1.png" alt="">
+                        <ul class="lista__left">
+                            <li class="nav__item">
+                                <a href="">Início</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="">Séries</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="">Filmes</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="">Bombando</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="">Minha lista</a>
+                            </li>
+                        </ul>
+                    </div>
+                        
+                    <div class="header__right">
+                        <ul class="lista__right">
+                            <li class="nav__item">
+                                <div class="search-box">
+                                    <input class="search-text" type="search" placeholder="Títulos, gente e gêneros">
+                                    <a class="search-btn" href="">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav__item">
+                                <div class="dropdown">
+                                    <i class="far fa-bell"></i>
+                                    <div class="dropdown-content-bell">
+                                      <div class="drop-profile">
+                                          <img src="./src/assets/imgs/titanic.jpg" alt="" />
+                                            <div class="bell-title">
+                                                <h4 >Novidade</h4>
+                                                <p>Titanic</p>
+                                                <p class="bell-subtitle">hoje</p>
+                                            </div>
+                                        </div>
+                                        <div class="drop-profile border">
+                                            <img src="./src/assets/imgs/vingadores.jpg" alt="" />
+                                            <div class="bell-title">
+                                                <h4>Novidade</h4>
+                                                <p>Avengers</p>
+                                                <p class="bell-subtitle">hoje</p>
+                                            </div>
+                                        </div>
+                                    </div>     
+                                </div>
+                            </li>
+                            <li class="header__user">
+                              <div class="dropdown">
+                                  <img src="./src/assets/imgs/Netflix-avatar.png" alt="Avatar usuário" />
+                                  <i class="material-icons -rotate">arrow_drop_down</i>
+                                <div class="dropdown-wrapper">
+                                  <i class="material-icons">arrow_drop_up</i>
+                                  <div class="dropdown-content">
+                                      <div class="drop-profile">
+                                          <img src="./src/assets/imgs/user1.png" alt="Avatar usuário" />
+                                          <a href="#">Gabriel</a>
+                                      </div>
+                                      <div class="drop-profile">
+                                          <img src="./src/assets/imgs/owl.jpg" alt="Avatar usuário" />
+                                          <a href="#">Valim</a>
+                                      </div>
+                                      <div class="drop-profile">
+                                          <img src="./src/assets/imgs/panda.jpg" alt="Avatar usuário" />
+                                          <a href="#">Roberta</a>
+                                      </div>
+                                      <div class="drop-profile">
+                                          <img src="./src/assets/imgs/chicken.jpg" alt="Avatar usuário" />
+                                          <a href="#">Juliana</a>
+                                      </div>
+                                      <div class="drop-profile">
+                                          <i class="fa fa-pencil"></i>
+                                          <a href="#">Gerenciar Perfis</a>
+                                      </div>
+                                      <div class="drop-profile">
+                                          <i class="fa fa-undo"></i>
+                                          <a href="#">Transferir Perfil</a>
+                                      </div>
+                                      <div class="drop-profile">
+                                          <i class="fa fa-user-o"></i>
+                                          <a href="#">Conta</a>
+                                      </div>
+                                      <div class="drop-profile">
+                                          <i class="fa fa-question-circle-o"></i>
+                                          <a href="#">Assistencia</a>
+                                      </div>
+                                          <a class="exit" href="">Sair da Netflix</a>
+                                    </div>
+
+                                  </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    </nav>
+                </header>
+                    
+                <main>
+                    <div class="banner">
+                        <img class="banner__post" src="./src/assets/imgs/poster1.png" alt="Banner filme
+                        Spiderhead">
+                        <span class="banner__subtitle">Em uma penitenciária de última geração, um detento participa de um experimento com drogas que controlam as emoções para um gênio da indústria farmacêutica.</span>
+
+                        <div class="banner__btn">
+                            <button type="submit" class="banner__btn--play">
+                                <i class="fas fa-play"></i>
+                                Assistir
+                            </button>
+                            <button class="banner__btn--info">
+                                <i class="fas fa-thin fa-circle-info"></i>Mais informações
+                            </button>
+                    </div>
+                </main>         
+
+        
+
+                <div class="swiper swiper-main"> <!-- Adicione a classe "swiper-container" aqui -->
+                    <p class="category__title">Bombando</p>
+                    <div class="swiper-wrapper wrapper"> <!-- Adicione a classe "swiper-wrapper" aqui -->
+                      <section class="swiper-slide carrousel"></section>
+                      <section class="swiper-slide carrousel"></section>
+                      <section class="swiper-slide carrousel"></section>
+                      <section class="swiper-slide carrousel"></section>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <p class="category__title">Minha lista</p>
+                  
+                    <div class="swiper-container">
+
+                      <div class="swiper-button-next"></div>
+
+                      <div class="swiper-wrapper">
+                        <!-- Seção 1 -->
+                        <div class="swiper-slide">
+                          <div class="section1 mylist">
+                            <!-- Conteúdo da seção 1 -->
+                          </div>
+                        </div>
+                  
+                        <!-- Seção 2 -->
+                        <div class="swiper-slide">
+                          <div class="section2 mylist">
+                            <!-- Conteúdo da seção 2 -->
+                          </div>
+                        </div>
+                        <!-- Seção 3 -->
+                        <div class="swiper-slide">
+                          <div class="section3 mylist">
+                            <!-- Conteúdo da seção 4 -->
+                          </div>
+                        </div>
+                        <!-- Seção 4 -->
+                        <div class="swiper-slide">
+                          <div class="section4 mylist">
+                            <!-- Conteúdo da seção 4 -->
+                          </div>
+                        </div>
+                        
+                      </div>
+                  
+                      <!-- Navegação -->
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    
+
+                    <p class="category__title">Lançamentos</p>
+
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <!-- Seção 1 -->
+                        <div class="swiper-slide">
+                          <div class="section1 rated">
+                            <!-- Conteúdo da seção 1 -->
+                          </div>
+                        </div>
+                  
+                        <!-- Seção 2 -->
+                        <div class="swiper-slide">
+                          <div class="section2 rated">
+                            <!-- Conteúdo da seção 2 -->
+                          </div>
+                        </div>
+                        <!-- Seção 3 -->
+                        <div class="swiper-slide">
+                          <div class="section3 rated">
+                            <!-- Conteúdo da seção 4 -->
+                          </div>
+                        </div>
+                        <!-- Seção 4 -->
+                        <div class="swiper-slide">
+                          <div class="section4 rated">
+                            <!-- Conteúdo da seção 4 -->
+                          </div>
+                        </div>
+                        
+                      </div>
+                  
+                      <!-- Navegação -->
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+
+                    
+                    <p class="category__title">Em alta</p>
+
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <!-- Seção 1 -->
+                        <div class="swiper-slide">
+                          <div class="section1 come">
+                            <!-- Conteúdo da seção 1 -->
+                          </div>
+                        </div>
+                  
+                        <!-- Seção 2 -->
+                        <div class="swiper-slide">
+                          <div class="section2 come">
+                            <!-- Conteúdo da seção 2 -->
+                          </div>
+                        </div>
+                        <!-- Seção 3 -->
+                        <div class="swiper-slide">
+                          <div class="section3 come">
+                            <!-- Conteúdo da seção 4 -->
+                          </div>
+                        </div>
+                        <!-- Seção 4 -->
+                        <div class="swiper-slide">
+                          <div class="section4 come">
+                            <!-- Conteúdo da seção 4 -->
+                          </div>
+                        </div>
+                        
+                      </div>
+                  
+                      <!-- Navegação -->
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+
+        </div>
+
+        <footer>
+            <div class="social-links">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+
+              <div class="link-content">
+                <div class="link-content__info">
+                  <ul>
+                    <li>Idioma e legendas</li>
+                    <li>Imprensa</li>
+                    <li>Privacidade</li>
+                    <li>Entre em contato</li>
+                  </ul>
+                  <ul>
+                    <li>Audiodescrição</li>
+                    <li>Relações com investidores</li>
+                    <li>Avisos legais</li>
+                  </ul>
+                  <ul>
+                    <li>Centro de ajuda</li>
+                    <li>Carreiras</li>
+                    <li>Preferência de cookies</li>
+                  </ul>
+                  <ul>
+                    <li>Cartão pré-pago</li>
+                    <li>Termos de uso</li>
+                    <li>informações corporativas</li>
+                  </ul>
+                </div>
+                <div class="link-content__service"> 
+                  <button class="link-content__service-code">Código do serviço</button>
+                </div>
+                <div class="link-content__copyright">
+                  <span>© 1997-2022 Netflix, Inc.&nbsp;&nbsp;&lrm;</span>
+                </div>
+        </footer>
+        
+
+    </div>
+</div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </body>
+</html>
+
